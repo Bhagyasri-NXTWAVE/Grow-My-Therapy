@@ -37,29 +37,29 @@ export default function OurOffice() {
         </div>
 
         {/* Right Side: Staggered Masonry Image Gallery with Hover Effects */}
-        <div className="w-full lg:w-7/12 relative">
-          <div className="grid grid-cols-2 gap-6 items-center">
-            {/* Image 1: Shifted up */}
-            <div className="transform -translate-y-8 transition-transform duration-500 hover:-translate-y-10">
+        <div className="w-full lg:w-7/12 relative mt-8 lg:mt-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
+            {/* Image 1: Normal on mobile, Shifted up on desktop */}
+            <div className="transform md:-translate-y-8 transition-transform duration-500 md:hover:-translate-y-10">
               <img 
                 src="https://res.cloudinary.com/diddtgqwf/image/upload/v1789119521/office1_hprftf.jpg" 
                 alt="Therapy office interior" 
-                className="w-full h-[400px] object-cover rounded-sm shadow-xl"
+                className="w-full md:h-[400px] object-cover rounded-sm shadow-xl"
               />
             </div>
             
-            {/* Image 2: Shifted down */}
-            <div className="transform translate-y-8 transition-transform duration-500 hover:translate-y-6">
+            {/* Image 2: Normal on mobile, Shifted down on desktop */}
+            <div className="transform md:translate-y-8 transition-transform duration-500 md:hover:translate-y-6 mt-4 md:mt-0">
               <img 
                 src="https://res.cloudinary.com/diddtgqwf/image/upload/v1789119588/office2_ul0woh.jpg" 
                 alt="Comfortable therapy seating" 
-                className="w-full h-[450px] object-cover rounded-sm shadow-2xl"
+                className="w-full md:h-[450px] object-cover rounded-sm shadow-2xl"
               />
             </div>
           </div>
           
           {/* Decorative background element to show advanced styling */}
-          <div className="absolute -z-10 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-[#faf9f6] rounded-full blur-3xl opacity-50"></div>
+          <div className="absolute -z-10 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-[#faf9f6] rounded-full blur-3xl opacity-50 hidden md:block"></div>
         </div>
 
       </div>
